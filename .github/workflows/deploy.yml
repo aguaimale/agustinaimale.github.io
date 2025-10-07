@@ -35,13 +35,13 @@ jobs:
          - name: Build project
            run: pnpm run build
 
-         - name: Setup Pages
-           uses: actions/configure-pages@v4
+        - name: Setup Pages
+          uses: actions/configure-pages@v4
 
-                - name: Upload artifact
-                  uses: actions/upload-pages-artifact@v3
-                  with:
-                     path: ./out
+        - name: Upload artifact
+          uses: actions/upload-pages-artifact@v3
+          with:
+             path: ./out
 
          - name: Deploy to GitHub Pages
            id: deployment
