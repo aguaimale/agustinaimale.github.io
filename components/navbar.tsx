@@ -6,6 +6,7 @@ import { ThemeToggle } from './theme-toggle';
 
 export function Navbar() {
    const [isScrolled, setIsScrolled] = useState(false);
+   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
    useEffect(() => {
       const handleScroll = () => {
@@ -14,6 +15,14 @@ export function Navbar() {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
    }, []);
+
+   const toggleMobileMenu = () => {
+      setIsMobileMenuOpen(!isMobileMenuOpen);
+   };
+
+   const closeMobileMenu = () => {
+      setIsMobileMenuOpen(false);
+   };
 
    const navLinks = [
       { name: 'Inicio', href: '/agustinaimale.github.io/' },
@@ -93,25 +102,70 @@ export function Navbar() {
                      className="text-muted-foreground hover:text-foreground"
                      whileHover={{ scale: 1.1 }}
                      whileTap={{ scale: 0.9 }}
+                     onClick={toggleMobileMenu}
                   >
-                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                     >
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                     </svg>
+                     {isMobileMenuOpen ? (
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="24"
+                           height="24"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                           stroke="currentColor"
+                           strokeWidth="2"
+                           strokeLinecap="round"
+                           strokeLinejoin="round"
+                        >
+                           <line x1="18" y1="6" x2="6" y2="18"></line>
+                           <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                     ) : (
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="24"
+                           height="24"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                           stroke="currentColor"
+                           strokeWidth="2"
+                           strokeLinecap="round"
+                           strokeLinejoin="round"
+                        >
+                           <line x1="3" y1="12" x2="21" y2="12"></line>
+                           <line x1="3" y1="6" x2="21" y2="6"></line>
+                           <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                     )}
                   </motion.button>
                </div>
             </div>
+
+            {/* Mobile menu */}
+            {isMobileMenuOpen && (
+               <motion.div
+                  className="md:hidden bg-background/95 backdrop-blur-md border-t border-border/50"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3, ease: 'easeInOut' }}
+               >
+                  <div className="px-6 py-4 space-y-4">
+                     {navLinks.map((link, index) => (
+                        <motion.a
+                           key={link.name}
+                           href={link.href}
+                           className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                           initial={{ opacity: 0, x: -20 }}
+                           animate={{ opacity: 1, x: 0 }}
+                           transition={{ delay: index * 0.1 }}
+                           onClick={closeMobileMenu}
+                        >
+                           {link.name}
+                        </motion.a>
+                     ))}
+                  </div>
+               </motion.div>
+            )}
          </div>
       </motion.nav>
    );
