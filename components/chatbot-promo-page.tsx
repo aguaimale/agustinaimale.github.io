@@ -523,7 +523,7 @@ export function ChatbotPromoPage() {
                      </strong>{' '}
                      o{' '}
                      <a
-                        href="../#hablemos"
+                        href="/agustinaimale.github.io/#hablemos"
                         className="text-accent hover:underline"
                      >
                         hablemos por WhatsApp

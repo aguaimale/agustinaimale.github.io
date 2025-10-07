@@ -147,7 +147,7 @@ export function PromoBanner({
                      className={`bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold shadow-lg transition-all duration-300 ${sizeClasses[size]}`}
                      asChild
                   >
-                     <a href="./promo">
+                     <a href="/agustinaimale.github.io/promo/">
                         <motion.div
                            className="flex items-center gap-2"
                            animate={{

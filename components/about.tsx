@@ -32,11 +32,11 @@ export function About() {
    return (
       <section
          id="sobre-mi"
-         className="relative h-screen flex items-center px-6 bg-card/50"
+         className="relative min-h-screen flex items-center px-4 md:px-6 py-16 md:py-0 bg-card/50"
       >
          <AnimatedGradient variant="section" className="absolute inset-0" />
          <motion.div
-            className="max-w-4xl mx-auto space-y-12"
+            className="max-w-4xl mx-auto space-y-8 md:space-y-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -50,7 +50,7 @@ export function About() {
                viewport={{ once: true }}
             >
                <motion.h2
-                  className="text-4xl md:text-5xl font-bold"
+                  className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
@@ -70,7 +70,7 @@ export function About() {
                </motion.h2>
 
                <motion.div
-                  className="text-lg md:text-xl text-muted-foreground space-y-4 leading-relaxed"
+                  className="text-base md:text-lg lg:text-xl text-muted-foreground space-y-3 md:space-y-4 leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}

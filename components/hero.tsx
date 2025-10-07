@@ -9,10 +9,10 @@ export function Hero() {
    return (
       <AnimatedGradient
          variant="hero"
-         className="h-screen flex items-center justify-center px-6"
+         className="min-h-screen flex items-center justify-center px-4 md:px-6 py-16 md:py-0"
       >
          <motion.div
-            className="max-w-5xl mx-auto text-center space-y-8"
+            className="max-w-5xl mx-auto text-center space-y-6 md:space-y-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -22,7 +22,7 @@ export function Hero() {
             }}
          >
             <motion.h1
-               className="text-5xl md:text-7xl font-bold leading-tight text-balance"
+               className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight text-balance"
                initial={{ opacity: 0, y: 30 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{
@@ -99,7 +99,7 @@ export function Hero() {
                   whileTap={{ scale: 0.95 }}
                >
                   <Button size="lg" className="text-lg px-8 group" asChild>
-                     <a href="./precios">
+                     <a href="/agustinaimale.github.io/precios/">
                         Ver precios
                         <motion.div
                            className="ml-2"

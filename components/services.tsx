@@ -92,8 +92,11 @@ const services = [
 
 export function Services() {
    return (
-      <section id="servicios" className="h-screen flex items-center px-6">
-         <div className="max-w-7xl mx-auto space-y-12">
+      <section
+         id="servicios"
+         className="min-h-screen flex items-center px-4 md:px-6 py-16 md:py-0"
+      >
+         <div className="max-w-7xl mx-auto space-y-8 md:space-y-12">
             <motion.div
                className="max-w-3xl space-y-4"
                initial={{ opacity: 0, y: 30 }}
@@ -102,7 +105,7 @@ export function Services() {
                viewport={{ once: true, amount: 0.3 }}
             >
                <motion.h2
-                  className="text-4xl md:text-5xl font-bold"
+                  className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
