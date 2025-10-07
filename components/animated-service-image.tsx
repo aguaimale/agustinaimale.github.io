@@ -37,7 +37,10 @@ export function AnimatedServiceImage({
 
    // Colores específicos para cada servicio
    const getServiceColors = (serviceName: string) => {
-      const colors = {
+      const colors: Record<
+         string,
+         { primary: string; secondary: string; accent: string }
+      > = {
          'Diseño UX/UI': {
             primary: 'from-pink-500/20 to-purple-500/20',
             secondary: 'from-rose-400/30 to-pink-400/30',
