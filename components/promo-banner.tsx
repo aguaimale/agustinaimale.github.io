@@ -22,6 +22,12 @@ export function PromoBanner({
       lg: 'text-lg px-8 py-4',
    };
 
+   const buttonSizes = {
+      sm: 'sm' as const,
+      md: 'lg' as const,
+      lg: 'lg' as const,
+   };
+
    const iconSizes = {
       sm: 'h-4 w-4',
       md: 'h-5 w-5',
@@ -137,7 +143,7 @@ export function PromoBanner({
                   whileTap={{ scale: 0.95 }}
                >
                   <Button
-                     size={size}
+                     size={buttonSizes[size]}
                      className={`bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold shadow-lg transition-all duration-300 ${sizeClasses[size]}`}
                      asChild
                   >
