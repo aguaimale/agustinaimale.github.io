@@ -1,0 +1,12 @@
+{
+   "Tailwind CSS 4 Directives": {
+      "prefix": "tw4",
+      "body": [
+         "@custom-variant ${1:name} (${2:selector});",
+         "@theme inline {",
+         "  ${3:/* theme configuration */}",
+         "}"
+      ],
+      "description": "Tailwind CSS 4 directives"
+   }
+}
