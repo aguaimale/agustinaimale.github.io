@@ -206,7 +206,6 @@ export function AnimatedServiceImage({
                className={`absolute top-4 right-4 w-10 h-10 rounded-full bg-gradient-to-r ${serviceColors.primary} backdrop-blur-sm border border-border/30 shadow-lg`}
                initial={{ scale: 0, rotate: 0, opacity: 0 }}
                whileInView={{ scale: 1, rotate: 360, opacity: 1 }}
-               transition={{ duration: 1, delay: 0.7 }}
                viewport={{ once: true }}
                animate={{
                   y: [0, -15, 0],
@@ -217,6 +216,7 @@ export function AnimatedServiceImage({
                   duration: 6,
                   repeat: Infinity,
                   ease: 'easeInOut',
+                  delay: 0.7,
                }}
             >
                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 to-transparent" />
