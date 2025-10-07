@@ -31,7 +31,7 @@ export function RotatingPromoBanner() {
             'Bonuses incluidos',
          ],
          cta: 'GET BONUS!',
-         link: '/promo',
+         link: '/agustinaimale.github.io/promo/',
          color: 'text-accent',
       },
       {
@@ -53,7 +53,7 @@ export function RotatingPromoBanner() {
             'Soporte 24/7',
          ],
          cta: 'AUTOMATIZAR AHORA!',
-         link: '/chatbot-promo',
+         link: '/agustinaimale.github.io/chatbot-promo/',
          color: 'text-accent',
       },
    ];

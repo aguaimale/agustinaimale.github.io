@@ -251,7 +251,7 @@ export function QuickPromoBanner({ className = '' }: { className?: string }) {
                   className="bg-green-500 hover:bg-green-600 text-white font-bold"
                   asChild
                >
-                  <a href="/promo">
+                  <a href="/agustinaimale.github.io/promo/">
                      <Gift className="h-4 w-4 mr-1" />
                      GET BONUS!
                   </a>

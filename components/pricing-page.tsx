@@ -495,7 +495,9 @@ Desde automatizaciones simples hasta sistemas complejos de integración, trabajo
                      whileTap={{ scale: 0.95 }}
                   >
                      <Button size="lg" className="text-lg px-8" asChild>
-                        <a href="/#hablemos">Consultar proyecto</a>
+                        <a href="/agustinaimale.github.io/#hablemos">
+                           Consultar proyecto
+                        </a>
                      </Button>
                   </motion.div>
                   <motion.div
