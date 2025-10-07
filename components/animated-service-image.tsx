@@ -226,7 +226,6 @@ export function AnimatedServiceImage({
                className={`absolute bottom-6 left-6 w-8 h-8 rounded-full bg-gradient-to-r ${serviceColors.secondary} backdrop-blur-sm shadow-lg`}
                initial={{ scale: 0, rotate: 0, opacity: 0 }}
                whileInView={{ scale: 1, rotate: -360, opacity: 1 }}
-               transition={{ duration: 1, delay: 0.9 }}
                viewport={{ once: true }}
                animate={{
                   x: [0, 15, 0],
@@ -237,6 +236,7 @@ export function AnimatedServiceImage({
                   duration: 5,
                   repeat: Infinity,
                   ease: 'easeInOut',
+                  delay: 0.9,
                }}
             >
                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 to-transparent" />
@@ -246,7 +246,6 @@ export function AnimatedServiceImage({
                className={`absolute top-1/2 left-4 w-6 h-6 rounded-full bg-gradient-to-r ${serviceColors.primary} backdrop-blur-sm shadow-lg`}
                initial={{ scale: 0, opacity: 0 }}
                whileInView={{ scale: 1, opacity: 1 }}
-               transition={{ duration: 0.8, delay: 1.1 }}
                viewport={{ once: true }}
                animate={{
                   y: [0, -20, 0],
@@ -257,6 +256,7 @@ export function AnimatedServiceImage({
                   duration: 4,
                   repeat: Infinity,
                   ease: 'easeInOut',
+                  delay: 1.1,
                }}
             >
                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 to-transparent" />
@@ -267,7 +267,6 @@ export function AnimatedServiceImage({
                className={`absolute top-6 left-6 w-3 h-3 rounded-full bg-gradient-to-r ${serviceColors.accent} opacity-60`}
                initial={{ scale: 0, opacity: 0 }}
                whileInView={{ scale: 1, opacity: 0.6 }}
-               transition={{ duration: 0.6, delay: 1.3 }}
                viewport={{ once: true }}
                animate={{
                   scale: [1, 1.5, 1],
@@ -277,6 +276,7 @@ export function AnimatedServiceImage({
                   duration: 3,
                   repeat: Infinity,
                   ease: 'easeInOut',
+                  delay: 1.3,
                }}
             />
 
@@ -284,7 +284,6 @@ export function AnimatedServiceImage({
                className={`absolute bottom-4 right-8 w-4 h-4 rounded-full bg-gradient-to-r ${serviceColors.secondary} opacity-50`}
                initial={{ scale: 0, opacity: 0 }}
                whileInView={{ scale: 1, opacity: 0.5 }}
-               transition={{ duration: 0.6, delay: 1.5 }}
                viewport={{ once: true }}
                animate={{
                   x: [0, -10, 0],
@@ -295,6 +294,7 @@ export function AnimatedServiceImage({
                   duration: 4,
                   repeat: Infinity,
                   ease: 'easeInOut',
+                  delay: 1.5,
                }}
             />
 
