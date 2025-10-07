@@ -503,7 +503,7 @@ export function PromoPage() {
                      </strong>{' '}
                      o{' '}
                      <a
-                        href="/#hablemos"
+                        href="../#hablemos"
                         className="text-accent hover:underline"
                      >
                         hablemos por WhatsApp

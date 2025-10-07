@@ -508,7 +508,7 @@ Desde automatizaciones simples hasta sistemas complejos de integración, trabajo
                         className="text-lg px-8 bg-transparent"
                         asChild
                      >
-                        <a href="/agustinaimale.github.io/">Volver al inicio</a>
+                        <a href="../">Volver al inicio</a>
                      </Button>
                   </motion.div>
                </motion.div>

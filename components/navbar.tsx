@@ -16,13 +16,13 @@ export function Navbar() {
    }, []);
 
    const navLinks = [
-      { name: 'Inicio', href: '/agustinaimale.github.io/' },
+      { name: 'Inicio', href: './' },
       { name: 'Sobre mí', href: '#sobre-mi' },
       { name: 'Servicios', href: '#servicios' },
       { name: 'Filosofía', href: '#filosofia' },
       { name: 'Tech Stack', href: '#tech-stack' },
       { name: 'Hablemos', href: '#hablemos' },
-      { name: 'Precios', href: '/agustinaimale.github.io/precios' },
+      { name: 'Precios', href: './precios' },
    ];
 
    return (
@@ -39,7 +39,7 @@ export function Navbar() {
          <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
                <motion.a
-                  href="/agustinaimale.github.io/"
+                  href="./"
                   className="text-xl font-bold"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

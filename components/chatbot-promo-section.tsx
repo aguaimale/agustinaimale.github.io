@@ -205,7 +205,7 @@ export function ChatbotPromoSection() {
                   whileTap={{ scale: 0.95 }}
                >
                   <Button size="lg" className="text-lg px-8" asChild>
-                     <a href="/agustinaimale.github.io/chatbot-promo">
+                     <a href="./chatbot-promo">
                         <Bot className="mr-2 h-5 w-5" />
                         AUTOMATIZAR AHORA!
                         <ArrowRight className="ml-2 h-5 w-5" />

@@ -99,7 +99,7 @@ export function Hero() {
                   whileTap={{ scale: 0.95 }}
                >
                   <Button size="lg" className="text-lg px-8 group" asChild>
-                     <a href="/precios">
+                     <a href="./precios">
                         Ver precios
                         <motion.div
                            className="ml-2"
