@@ -4,7 +4,6 @@ const nextConfig = {
    output: 'export',
    trailingSlash: true,
    distDir: 'out',
-   basePath: '/agustinaimale.github.io',
    images: {
       unoptimized: true, // Necesario para exportación estática
       formats: ['image/webp', 'image/avif'],

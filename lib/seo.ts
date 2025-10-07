@@ -2,9 +2,7 @@ import type { Metadata } from 'next';
 
 // Configuración SEO base
 export const baseSEO = {
-   metadataBase: new URL(
-      'https://agustinaimale.github.io/agustinaimale.github.io'
-   ), // URL de GitHub Pages
+   metadataBase: new URL('https://agustinaimale.github.io'), // URL de GitHub Pages
    title: {
       default: 'Agustín Aimale — Diseñador UX/UI & Desarrollador Frontend',
       template: '%s — Agustín Aimale',
@@ -35,7 +33,7 @@ export const baseSEO = {
    openGraph: {
       type: 'website',
       locale: 'es_AR',
-      url: 'https://agustinaimale.github.io/agustinaimale.github.io',
+      url: 'https://agustinaimale.github.io',
       siteName: 'Agustín Aimale',
       title: 'Agustín Aimale — Diseñador UX/UI & Desarrollador',
       description:
@@ -58,7 +56,7 @@ export const baseSEO = {
       creator: '@agustinaimale', // Cambiar por tu Twitter real
    },
    alternates: {
-      canonical: 'https://agustinaimale.github.io/agustinaimale.github.io',
+      canonical: 'https://agustinaimale.github.io',
    },
    verification: {
       google: 'your-google-verification-code', // Agregar cuando tengas Google Search Console
@@ -127,8 +125,8 @@ export const organizationSchema = {
    jobTitle: 'Diseñador UX/UI & Desarrollador Frontend',
    description:
       'Diseño, desarrollo y pienso productos digitales con cabeza de negocio y alma de diseñador.',
-   url: 'https://agustinaimale.github.io/agustinaimale.github.io',
-   image: 'https://agustinaimale.github.io/agustinaimale.github.io/profile.jpg',
+   url: 'https://agustinaimale.github.io',
+   image: 'https://agustinaimale.github.io/profile.jpg',
    sameAs: [
       'https://linkedin.com/in/agustinaimale',
       'https://behance.net/agustinaimale',
@@ -165,7 +163,7 @@ export const websiteSchema = {
    '@context': 'https://schema.org',
    '@type': 'WebSite',
    name: 'Agustín Aimale',
-   url: 'https://agustinaimale.github.io/agustinaimale.github.io',
+   url: 'https://agustinaimale.github.io',
    description: 'Portfolio y servicios de diseño UX/UI y desarrollo frontend',
    author: {
       '@type': 'Person',
@@ -173,15 +171,14 @@ export const websiteSchema = {
    },
    potentialAction: {
       '@type': 'SearchAction',
-      target:
-         'https://agustinaimale.github.io/agustinaimale.github.io/search?q={search_term_string}',
+      target: 'https://agustinaimale.github.io/search?q={search_term_string}',
       'query-input': 'required name=search_term_string',
    },
 };
 
 // Configuración de sitemap
 export const sitemapConfig = {
-   hostname: 'https://agustinaimale.github.io/agustinaimale.github.io',
+   hostname: 'https://agustinaimale.github.io',
    routes: [
       {
          url: '/',
