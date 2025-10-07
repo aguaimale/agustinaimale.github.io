@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
          allow: '/',
          disallow: ['/private/', '/admin/'],
       },
-      sitemap: 'https://agustinaimale.github.io/sitemap.xml',
+      sitemap:
+         'https://agustinaimale.github.io/agustinaimale.github.io/sitemap.xml',
    };
 }

@@ -3,7 +3,8 @@ const nextConfig = {
    // Configuración para GitHub Pages
    output: 'export',
    trailingSlash: true,
-   distDir: 'dist',
+   distDir: 'out',
+   basePath: '/agustinaimale.github.io',
    images: {
       unoptimized: true, // Necesario para exportación estática
       formats: ['image/webp', 'image/avif'],
