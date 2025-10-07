@@ -19,7 +19,7 @@ export const trackEvent = (
 
 // Eventos específicos del sitio
 export const trackPageView = (url: string) => {
-   if (typeof window !== 'undefined' && window.gtag) {
+   if (typeof window !== 'undefined' && window.gtag && GA_TRACKING_ID) {
       window.gtag('config', GA_TRACKING_ID, {
          page_path: url,
       });
